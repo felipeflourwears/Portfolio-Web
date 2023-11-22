@@ -1,5 +1,25 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Commands to init project 22:24
+
+```bash
+    npx create-next-app@latest
+    √ What is your project named? ... portfolio-website
+    √ Would you like to use TypeScript? ... No / 
+    √ Would you like to use ESLint? ... / Yes
+    √ Would you like to use Tailwind CSS? ... / Yes
+    √ Would you like to use `src/` directory? ... / Yes
+    √ Would you like to use App Router? (recommended) ... / Yes
+    √ Would you like to customize the default import alias? ... No /
+```
+
+## VS extensions
+
+```bash
+ES7+ React/Redux/React-Native snippets by dsznajder
+Tailwind CSS IntelliSense by Intelligent Tailwind CSS tooling for VS Code
+```
+
 ## Getting Started
 
 First, run the development server:
