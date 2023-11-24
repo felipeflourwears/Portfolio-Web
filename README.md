@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Commands to init project 22:24
+## Commands to init project 34:31
 
 ```bash
     npx create-next-app@latest
@@ -11,6 +11,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
     √ Would you like to use `src/` directory? ... / Yes
     √ Would you like to use App Router? (recommended) ... / Yes
     √ Would you like to customize the default import alias? ... No /
+```
+
+## Install packages
+
+```bash
+npm install react-type-animation --> https://www.npmjs.com/package/react-type-animation
+
 ```
 
 ## VS extensions
