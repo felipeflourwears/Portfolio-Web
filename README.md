@@ -17,6 +17,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ```bash
 npm install react-type-animation --> https://www.npmjs.com/package/react-type-animation
+npm install @heroicons/react     --> https://github.com/tailwindlabs/heroicons --> https://heroicons.com/
+
 
 ```
 
