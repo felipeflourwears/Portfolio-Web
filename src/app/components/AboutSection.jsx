@@ -62,7 +62,7 @@ const AboutSection = () => {
             <Image src="/images/about.png" width={500} height={500} />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                <p className='text-base lg:text-lg'>
+                <p className='text-base lg:text-lg' style={{ textAlign: 'justify' }}>
                     I am an Engineer in Robotics and Digital Systems, a Cybersecurity Tester, and a 
                     Software Developer. I have experience working with ROS (Robot Operating System), 
                     Python, JavaScript, Flask, Jinja, PHP, HTML, Git, Nmap, OWASP ZAP, Nessus, MySQL, 
@@ -70,6 +70,7 @@ const AboutSection = () => {
                     Currently, I am learning React and Next.js. I learn quickly and adapt to needs; 
                     I'm always excited to work in a team to create incredible projects. 
                 </p>
+
                 <div className='flex flex-row justify-start mt-8'>
                     <TabButton 
                         selectTab={() => handleTabChange("skills")} 
