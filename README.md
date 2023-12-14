@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Commands to init project 58:16
+## Commands to init project 1:09:19
 
 ```bash
     npx create-next-app@latest
@@ -18,6 +18,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ```bash
 npm install react-type-animation --> https://www.npmjs.com/package/react-type-animation
 npm install @heroicons/react     --> https://github.com/tailwindlabs/heroicons --> https://heroicons.com/
+npm install framer-motion
 
 
 ```
