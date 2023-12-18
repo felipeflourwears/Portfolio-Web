@@ -8,7 +8,8 @@ const projectsData = [
         description: "Python Flask",
         image: "/images/projects/kiosko.png",
         tag: ["All", "Web"],
-        imgUrl: "https://github.com/"
+        gitUrl: "https://github.com/",
+        previewUrl: "https://github.com/"
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ const projectsData = [
         description: "Next JS",
         image: "/images/projects/administrationNextJS.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/"
+        gitUrl: "https://github.com/",
+        previewUrl: "https://github.com/"
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ const projectsData = [
         description: "Javascript, CSS",
         image: "/images/projects/codeBar.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/"
+        gitUrl: "https://github.com/",
+        previewUrl: "https://github.com/"
     },
     {
         id: 4,
@@ -32,15 +35,17 @@ const projectsData = [
         description: "Javascript, PHP, CSS",
         image: "/images/projects/printerMike.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/"
+        gitUrl: "https://github.com/",
+        previewUrl: "https://github.com/"
     },
     {
         id: 5,
         title: "ROS Puzzlebot Manchester Robotics",
         description: "ROS, Python, MakeFile",
-        image: "/images/projects/puzzlebot.jpeg",
+        image: "/images/projects/puzzlebotlf.png",
         tag: ["All", "Robotics"],
-        gitUrl: "https://github.com/"
+        gitUrl: "https://github.com/",
+        previewUrl: "https://github.com/"
     }
 
 
@@ -59,8 +64,9 @@ const ProjectsSection = () => {
                     title={project.title} 
                     description={project.description} 
                     imgUrl={project.image}
-                    tags={project.tag}
+                    tags={project}
                     gitUrl={project.gitUrl}
+                    previewUrl={project.previewUrl}
                 />
             ))}
         </div>
