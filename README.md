@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Commands to init project 1:15:47
+## Commands to init project
 
 ```bash
     npx create-next-app@latest
@@ -19,7 +19,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 npm install react-type-animation --> https://www.npmjs.com/package/react-type-animation
 npm install @heroicons/react     --> https://github.com/tailwindlabs/heroicons --> https://heroicons.com/
 npm install framer-motion
+npm install resend  --> Installs the Resend package for easy email sending via API -->  https://resend.com/
+1:38:10
 
+```
+
+### Code from Resend
+```
+re_SAfKcpwr_HjLLYB4d6YPZstkxoj3Xq5vc
 
 ```
 
