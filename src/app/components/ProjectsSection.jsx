@@ -1,5 +1,7 @@
-import React from 'react'
+"use client";
+import React, {useState} from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag';
 
 const projectsData = [
     {
@@ -8,8 +10,8 @@ const projectsData = [
         description: "Python Flask",
         image: "/images/projects/kiosko.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/",
-        previewUrl: "https://github.com/"
+        gitUrl: "https://github.com/felipeflourwears/Kiosko",
+        previewUrl: "https://github.com/felipeflourwears/Kiosko/blob/master/media/dashboard.png"
     },
     {
         id: 2,
@@ -17,8 +19,8 @@ const projectsData = [
         description: "Next JS",
         image: "/images/projects/administrationNextJS.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/",
-        previewUrl: "https://github.com/"
+        gitUrl: "https://github.com/felipeflourwears/AdministrationUser-NextJs",
+        previewUrl: "https://github.com/felipeflourwears/AdministrationUser-NextJs/blob/master/img/home.png"
     },
     {
         id: 3,
@@ -26,8 +28,8 @@ const projectsData = [
         description: "Javascript, CSS",
         image: "/images/projects/codeBar.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/",
-        previewUrl: "https://github.com/"
+        gitUrl: "https://github.com/felipeflourwears/CodeProduct-PlayerMedia",
+        previewUrl: "https://github.com/felipeflourwears/CodeProduct-PlayerMedia/blob/master/media/main.png"
     },
     {
         id: 4,
@@ -35,7 +37,7 @@ const projectsData = [
         description: "Javascript, PHP, CSS",
         image: "/images/projects/printerMike.png",
         tag: ["All", "Web"],
-        gitUrl: "https://github.com/",
+        gitUrl: "https://github.com/felipeflourwears/PrinterMike42",
         previewUrl: "https://github.com/"
     },
     {
@@ -52,26 +54,54 @@ const projectsData = [
 ]
 
 const ProjectsSection = () => {
-  return (
-    <>
-        <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
-            My Projects
-        </h2>
-        <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-            {projectsData.map((project) => (
-                <ProjectCard 
-                    key={project.id} 
-                    title={project.title} 
-                    description={project.description} 
-                    imgUrl={project.image}
-                    tags={project}
-                    gitUrl={project.gitUrl}
-                    previewUrl={project.previewUrl}
+    
+    const [tag, setTag] = useState("All");
+    
+    const handleTagChange = (newTag) => {
+        setTag(newTag);
+    };
+
+    const filteredProjects = projectsData.filter((project) =>
+        project.tag.includes(tag)
+    );
+
+    return (
+        <>
+            <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
+                My Projects
+            </h2>
+            <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+                <ProjectTag
+                    onClick={handleTagChange} 
+                    name="All" 
+                    isSelected={tag == "All"} 
                 />
-            ))}
-        </div>
-    </>
-  )
+                <ProjectTag
+                    onClick={handleTagChange} 
+                    name="Web" 
+                    isSelected={tag == "Web"} 
+                />
+                <ProjectTag
+                    onClick={handleTagChange} 
+                    name="Robotics" 
+                    isSelected={tag == "Robotics"} 
+                />
+            </div>
+            <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
+                {filteredProjects.map((project) => (
+                    <ProjectCard 
+                        key={project.id} 
+                        title={project.title} 
+                        description={project.description} 
+                        imgUrl={project.image}
+                        tags={project}
+                        gitUrl={project.gitUrl}
+                        previewUrl={project.previewUrl}
+                    />
+                ))}
+            </div>
+        </>
+    )
 }
 
 export default ProjectsSection
