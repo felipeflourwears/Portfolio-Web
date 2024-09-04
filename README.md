@@ -20,7 +20,7 @@ npm install react-type-animation --> https://www.npmjs.com/package/react-type-an
 npm install @heroicons/react     --> https://github.com/tailwindlabs/heroicons --> https://heroicons.com/
 npm install framer-motion
 npm install resend  --> Installs the Resend package for easy email sending via API -->  https://resend.com/
-1:38:10
+1:43:16
 
 ```
 
