@@ -7,7 +7,16 @@ import { motion, useInView } from "framer-motion"
 
 const projectsData = [
     {
-        id: 1,
+        id: 101,
+        title: "Easy Tip Calculator",
+        description: "Typescript Project, using different hooks to interact",
+        image: "/images/projects/easy-tip-calculator.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/felipeflourwears/Easy-Tip-Calculator",
+        previewUrl: "https://vermillion-pavlova-c5b414.netlify.app/"
+    },
+    {
+        id: 2,
         title: "Kiosko Flask Implementation",
         description: "Python Flask",
         image: "/images/projects/kiosko.png",
@@ -16,16 +25,16 @@ const projectsData = [
         previewUrl: "https://github.com/felipeflourwears/Kiosko/blob/master/media/dashboard.png"
     },
     {
-        id: 2,
+        id: 3,
         title: "Administration Next JS API Users",
         description: "Next JS",
         image: "/images/projects/administrationNextJS.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/AdministrationUser-NextJs",
-        previewUrl: "https://github.com/felipeflourwears/AdministrationUser-NextJs/blob/master/img/home.png"
+        previewUrl: "https://test-administration-next-js-felipeflourwears.vercel.app/users/1"
     },
     {
-        id: 3,
+        id: 4,
         title: "Code Bar Product Media Player",
         description: "Javascript, CSS",
         image: "/images/projects/codeBar.png",
@@ -49,7 +58,7 @@ const projectsData = [
         image: "/images/projects/puzzlebotlf.png",
         tag: ["All", "Robotics"],
         gitUrl: "https://github.com/",
-        previewUrl: "https://github.com/"
+        previewUrl: "https://youtu.be/j8GXnlNNsoM?si=VcctCIki1Vw2K7GC"
     }
 
 
