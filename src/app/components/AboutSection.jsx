@@ -11,6 +11,8 @@ const TAB_DATA = [
     content: (
         <ul className='list-disc pl-2'>
             <li>Javascript</li>
+            <li>Python</li>
+            <li>Learning Typescript</li>
             <li>Learning React</li>
             <li>Learning Next JS</li>
             <li>Python</li>
@@ -59,7 +61,7 @@ const AboutSection = () => {
   return (
     <section className='text-white'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-            <Image src="/images/about.png" width={500} height={500} />
+            <Image src="/images/about.png" width={500} height={500} alt='about'/>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg' style={{ textAlign: 'justify' }}>
@@ -68,7 +70,7 @@ const AboutSection = () => {
                     Python, JavaScript, Flask, Jinja, PHP, HTML, Git, Nmap, OWASP ZAP, Nessus, MySQL, 
                     SQL Server, as well as cloud servers with AWS and Linux-based servers. 
                     Currently, I am learning React and Next.js. I learn quickly and adapt to needs; 
-                    I'm always excited to work in a team to create incredible projects. 
+                    I&apos;m always excited to work in a team to create incredible projects. 
                 </p>
 
                 <div className='flex flex-row justify-start mt-8'>
