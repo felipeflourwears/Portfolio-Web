@@ -1,8 +1,11 @@
 import Link from "next/link";
 
-const NavLink = ( { href , title }) => {
-    return(
-        <Link href={"#about"} className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white'>
+const NavLink = ({ href, title }) => {
+    return (
+        <Link
+            href={href} // Usa el href recibido como prop
+            className='block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white'
+        >
             {title}
         </Link>
     );

@@ -59,17 +59,17 @@ const AboutSection = () => {
         });
     };
   return (
-    <section className='text-white'>
+    <section id="About" className='text-white'>
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
             <Image src="/images/about.png" width={500} height={500} alt="Imagen sobre mí"/> {/* Corregido el alt */}
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg' style={{ textAlign: 'justify' }}>
-                    I am an Engineer in Robotics and Digital Systems, a Cybersecurity Tester, and a 
+                    I&apos;m an Engineer in Robotics and Digital Systems, a Cybersecurity Tester, and a 
                     Software Developer. I have experience working with ROS (Robot Operating System), 
                     Python, JavaScript, Flask, Jinja, PHP, HTML, Git, Nmap, OWASP ZAP, Nessus, MySQL, 
                     SQL Server, as well as cloud servers with AWS and Linux-based servers. 
-                    Currently, I am learning React and Next.js. I learn quickly and adapt to needs; 
+                    Currently, I&apos;m learning React and Next.js. I learn quickly and adapt to needs; 
                     I&apos;m always excited to work in a team to create incredible projects. {/* Corregido el escape de comillas */}
                 </p>
 

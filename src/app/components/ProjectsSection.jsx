@@ -7,6 +7,33 @@ import { motion, useInView } from "framer-motion"
 
 const projectsData = [
     {
+        id: 100,
+        title: "Dashboard CMS",
+        description: "Developed a CMS for real-time reporting of various services, including media playback and content management, utilizing Flask with Python and interact with API's ",
+        image: "/images/projects/dashboardcmsi.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/felipeflourwears/Dashboard-VNOX.git",
+        previewUrl: "https://popcmsi.io/login"
+    },
+    {
+        id: 5,
+        title: "ROS Puzzlebot Manchester Robotics",
+        description: "Developed a Puzzlebot Edition from Manchester Robotics using ROS, Python, and Makefile. Implemented simulation with Gazebo on Ubuntu, utilizing ROS components (topics, messages, services). Integrated deep learning models for traffic signal detection.",
+        image: "/images/projects/puzzlebotlf.png",
+        tag: ["All", "Robotics"],
+        gitUrl: "https://github.com/NACIONES-DESUNIDAS/puzzlebot_workspace_backup.git",
+        previewUrl: "https://youtu.be/j8GXnlNNsoM?si=VcctCIki1Vw2K7GC"
+    },
+    {
+        id: 110,
+        title: "Funko Store",
+        description: "Javascript + React Project, using different hooks to interact",
+        image: "/images/projects/funkocart.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/felipeflourwears/FunkoCart",
+        previewUrl: "https://clinquant-swan-1b49c4.netlify.app/"
+    },
+    {
         id: 101,
         title: "Easy Tip Calculator",
         description: "Typescript Project, using different hooks to interact",
@@ -18,50 +45,39 @@ const projectsData = [
     {
         id: 2,
         title: "Kiosko Flask Implementation",
-        description: "Python Flask",
+        description: "Developed a restaurant order kiosk system using Python Flask for efficient order management. The application allows customers to place orders seamlessly, handling menu browsing, order submissions, and real-time updates.",
         image: "/images/projects/kiosko.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/Kiosko",
-        previewUrl: "https://github.com/felipeflourwears/Kiosko/blob/master/media/dashboard.png"
+        previewUrl: "https://raw.githubusercontent.com/felipeflourwears/Kiosko/refs/heads/master/media/dashboard.png"
     },
     {
         id: 3,
         title: "Administration Next JS API Users",
-        description: "Next JS",
+        description: "Simple API requests built using Next.js",
         image: "/images/projects/administrationNextJS.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/AdministrationUser-NextJs",
-        previewUrl: "https://test-administration-next-js-felipeflourwears.vercel.app/users/1"
+        previewUrl: "https://test-administration-next-js-felipeflourwears.vercel.app/"
     },
     {
         id: 4,
-        title: "Code Bar Product Media Player",
-        description: "Javascript, CSS",
+        title: "Code Bar Product Media Player Interact with a Scaner of products",
+        description: "Javascript, CSS, HTML",
         image: "/images/projects/codeBar.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/CodeProduct-PlayerMedia",
-        previewUrl: "https://github.com/felipeflourwears/CodeProduct-PlayerMedia/blob/master/media/main.png"
+        previewUrl: "https://retailmibeex.net/codeproduct/"
     },
     {
-        id: 4,
+        id: 11,
         title: "Game Interaction with Printer",
-        description: "Javascript, PHP, CSS",
+        description: "Developed functionality using JavaScript, PHP, CSS, and HTML to connect with the Printer Mike system. Implemented a promotional feature that rewards users with a discount or offer when they win a game.",
         image: "/images/projects/printerMike.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/PrinterMike42",
-        previewUrl: "https://github.com/"
-    },
-    {
-        id: 5,
-        title: "ROS Puzzlebot Manchester Robotics",
-        description: "ROS, Python, MakeFile",
-        image: "/images/projects/puzzlebotlf.png",
-        tag: ["All", "Robotics"],
-        gitUrl: "https://github.com/",
-        previewUrl: "https://youtu.be/j8GXnlNNsoM?si=VcctCIki1Vw2K7GC"
+        previewUrl: "https://raw.githubusercontent.com/felipeflourwears/PrinterMike42/refs/heads/master/ticket.jpg"
     }
-
-
 ]
 
 const ProjectsSection = () => {
@@ -85,7 +101,7 @@ const ProjectsSection = () => {
     };
 
     return (
-        <section>
+        <section id="Projects">
             <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
                 My Projects
             </h2>
