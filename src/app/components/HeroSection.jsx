@@ -37,7 +37,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-              Like a Jedi in constant learning, I quickly adapt to new challenges in the digital universe.
+              In every line of code, I feel the power of the dark side; each project is a new galaxy to conquer.
           </p>
           <div>
             <Link
