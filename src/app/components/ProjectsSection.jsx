@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion"
 
 const projectsData = [
     {
-        id: 100,
+        id: 1,
         title: "Dashboard CMS",
         description: "Developed a CMS for real-time reporting of various services, including media playback and content management, utilizing Flask with Python and interact with API's ",
         image: "/images/projects/dashboardcmsi.png",
@@ -16,7 +16,7 @@ const projectsData = [
         previewUrl: "https://popcmsi.io/login"
     },
     {
-        id: 5,
+        id: 2,
         title: "ROS Puzzlebot Manchester Robotics",
         description: "Developed a Puzzlebot Edition from Manchester Robotics using ROS, Python, and Makefile. Implemented simulation with Gazebo on Ubuntu, utilizing ROS components (topics, messages, services). Integrated deep learning models for traffic signal detection.",
         image: "/images/projects/puzzlebotlf.png",
@@ -25,25 +25,34 @@ const projectsData = [
         previewUrl: "https://youtu.be/j8GXnlNNsoM?si=VcctCIki1Vw2K7GC"
     },
     {
-        id: 110,
+        id: 3,
         title: "Funko Store",
-        description: "Javascript + React Project, using different hooks to interact",
+        description: "JavaScript and React project designed as an online Funko Store. Users can add Funko Pops to their cart, calculate the total price, and easily empty the cart when needed.",
         image: "/images/projects/funkocart.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/FunkoCart",
         previewUrl: "https://clinquant-swan-1b49c4.netlify.app/"
     },
     {
-        id: 101,
+        id: 4,
+        title: "Calorie Tracker",
+        description: "TypeScript project using useReducer for state management, enabling the tracking of different activities and calorie intake/loss efficiently.",
+        image: "/images/projects/calorie-tracker.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/felipeflourwears/Calorie-Tracker",
+        previewUrl: "https://jocular-paletas-93a776.netlify.app/"
+    },
+    {
+        id: 5,
         title: "Easy Tip Calculator",
-        description: "Typescript Project, using different hooks to interact",
+        description: "TypeScript project designed as a user-friendly tip calculator. Utilizes various React hooks to manage state and interactions, enabling users to quickly calculate tips based on service quality.",
         image: "/images/projects/easy-tip-calculator.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/Easy-Tip-Calculator",
         previewUrl: "https://vermillion-pavlova-c5b414.netlify.app/"
     },
     {
-        id: 2,
+        id: 6,
         title: "Kiosko Flask Implementation",
         description: "Developed a restaurant order kiosk system using Python Flask for efficient order management. The application allows customers to place orders seamlessly, handling menu browsing, order submissions, and real-time updates.",
         image: "/images/projects/kiosko.png",
@@ -52,7 +61,7 @@ const projectsData = [
         previewUrl: "https://raw.githubusercontent.com/felipeflourwears/Kiosko/refs/heads/master/media/dashboard.png"
     },
     {
-        id: 3,
+        id: 7,
         title: "Administration Next JS API Users",
         description: "Simple API requests built using Next.js",
         image: "/images/projects/administrationNextJS.png",
@@ -61,16 +70,16 @@ const projectsData = [
         previewUrl: "https://test-administration-next-js-felipeflourwears.vercel.app/"
     },
     {
-        id: 4,
-        title: "Code Bar Product Media Player Interact with a Scaner of products",
-        description: "Javascript, CSS, HTML",
+        id: 8,
+        title: "Code Bar Product Media Player",
+        description: "JavaScript, CSS, and HTML project designed to interact with a real barcode scanner. Users can scan product codes to instantly view related product videos.",
         image: "/images/projects/codeBar.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/felipeflourwears/CodeProduct-PlayerMedia",
         previewUrl: "https://retailmibeex.net/codeproduct/"
     },
     {
-        id: 11,
+        id: 9,
         title: "Game Interaction with Printer",
         description: "Developed functionality using JavaScript, PHP, CSS, and HTML to connect with the Printer Mike system. Implemented a promotional feature that rewards users with a discount or offer when they win a game.",
         image: "/images/projects/printerMike.png",
